@@ -6,8 +6,9 @@ def reformat_languages(languages)
       new_hash[lang] = type
       if new_hash[lang][:style] == nil
         new_hash[lang][:style] = [k]
-      end
+      else
       new_hash[lang][:style] << k
+      end
     
     end
   end
